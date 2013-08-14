@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+	<title>Custom Form Elements</title>
+	
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+</head>
+<body>
+	<h1>Custom Form Elements</h1>
+	
+	<form class="login">
+		<h2>Login to your account</h2>
+		<div class="stacked">
+			<input type="text" class="bg-icon username" placeholder="Username" />
+			<input type="password" class="bg-icon password" placeholder="Password" />
+		</div>
+		<input type="submit" value="Login" />
+	</form>
+
+
+	<form class="login">
+		<h2>Search</h2>
+		<label class="lbl-one-quarter">Mode of transport:</label>
+		<label class="lbl-one-third"><input type="radio" name="ima" vale="driver" /><span>Walking<span></label>				
+		<label class="lbl-one-third"><input type="radio" name="ima" value="copilot" /><span>Driving<span></label>				
+		<div class="stacked">
+			<input type="text" placeholder="Leaving from" class="bg-icon from" />
+			<input type="text" placeholder="Going to" class="bg-icon to" />
+			<input type="date" placeholder="Departing" class="bg-icon date" value="2013-01-01" />
+		</div>
+		
+		<input type="submit" value="Search" />
+	</form>
+
+
+	<form class="registration">
+		<h2>Register</h2>
+		<label class="hidden">Full Name:</label><input type="text" class="txt-two-thirds" placeholder="Full Name" />
+		<label class="hidden">Gender:</label>
+		<select class="dd-one-third">
+			<option value="">Gender</option>
+			<option>Male</option>
+			<option>Female</option>
+		</select>
+	
+	
+		<label class="hidden">Address:</label><input type="text" class="txt-full" placeholder="Address" />
+		<label class="hidden">City:</label><input type="text" class="txt-full" placeholder="City" />
+	
+		<label class="hidden">State:</label>
+		<select class="dd-one-third">
+			<option value="">State</option>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+		</select>
+		
+		<label class="hidden">ZIP:</label>
+		<input type="text" class="txt-two-thirds" placeholder="ZIP Code" />
+		<label class="hidden">Email Address:</label>
+		<input type="text" class="txt-full" placeholder="Email Address" />
+		<label class="hidden">Phone Number:</label>
+		<input type="text" class="txt-full" placeholder="Phone Number" />
+		<label class="hidden">Password:</label>
+		<input type="password" class="txt-full" placeholder="Password" />
+		<label class="lbl-half"><input type="checkbox" /><span>Agree to Terms</span></label>				
+		<label class="lbl-half"><input type="checkbox" /><span>Spam Me</span></label>
+
+		<input type="submit" value="Create Account">
+	</form>
+			
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+/************ Reset **************/
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+html, body, div, object, iframe, fieldset { 
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+} 
+
+ol, ul { 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} 
+
+table { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+}
+
+header, footer, nav, section, article, hgroup, figure {
+	display: block;	
+}
+
+legend {
+	display: none;
+}
+/************ End Reset **************/
+
+
+/************ Global **************/
+body {
+	background: #fff;
+	color: #333;
+	font: 100%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	margin-bottom: 0.5em;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.6em;
+	line-height: 1.1;
+	margin-bottom: 0.5em;
+	text-align: center;
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: normal;
+	line-height: 1.1;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid #ccc;
+	font-weight: 400;
+}
+/************ End Global **************/
+
+
+/************ Forms **************/
+form {
+	padding: 1em 0;
+}
+
+
+/* Reset */
+input[type=text], input[type=password], input[type=submit], input[type=date], button, select {
+	display: block; 
+	width: 97%; 
+	padding: 10px; 
+	margin: 0 1.5% 10px 1.5%;
+	font-size: 18px;
+	font-weight: 300;
+	color: #838383;
+	background-color: #ececec;
+	border: none;
+	border-top: solid 1px #e0e0e0;
+	border-bottom: solid 1px #fbfbfb;
+	-webkit-appearance:none;
+	border-radius: 0;
+	height: 50px;
+}
+
+
+/* Date Picker for Chrome and Webkit Mobile */
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+	font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	color: #838383;
+}
+
+
+/* Stacked Styles */
+.stacked {
+	margin: 2em 1.5%; 
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px 2px #e4e4e4;
+	clear: both;
+}
+
+.stacked input[type=text], .stacked input[type=password], .stacked input[type=date] {
+	margin: 0 0 1px 0;
+	padding-left: 20px; 
+	padding-right: 20px;
+	width: 100%;
+	background-color: #fff;
+	border: none;
+}
+
+	/* modifiers */
+	.stacked input:first-child {
+		border-radius: 4px 4px 0 0;
+	}
+	
+	.stacked input:not(:last-child) {
+		border-bottom: solid 1px #e4e4e4;
+	}
+	
+	.stacked input:last-child {
+		border-radius: 0 0 4px 4px;
+	}
+
+
+/* Icons inside form elements */
+input[type=text].bg-icon, input[type=date].bg-icon, input[type=password].bg-icon {
+	background-image: url('../images/sprite_icons.png');
+	background-repeat: no-repeat;
+	padding-right: 50px;
+}
+
+
+/* Select */
+select {
+	background-image: url('../images/sprite_ui.png');
+	background-position: right -122px;
+	background-repeat: no-repeat;	
+}
+
+
+/* Radio and Checkboxes */
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=radio]:checked + span {
+	background-position: 0 -34px;
+}
+
+input[type=radio] + span {
+	padding: 6px 0 6px 33px;
+	background: url('../images/sprite_ui.png') 0 -2px no-repeat;
+}
+
+input[type=checkbox]:checked + span {
+	background-position: 0 -98px;
+}
+
+input[type=checkbox] + span {
+	padding: 6px 0 6px 33px;
+	background: url('../images/sprite_ui.png') 0 -66px no-repeat;
+}
+
+label {
+	display: block;
+	width: 97%; 
+	margin: 0 1.5% 10px 1.5%;
+	color: #838383;
+}
+
+label input[type=checkbox],
+label input[type=radio] {
+	position: relative;
+	margin-right: 5%;
+}
+
+	/* for accessibility */
+	label.hidden {
+		position: absolute;
+		left: -9999em;
+		clip: rect(1px,1px,1px,1px);
+	}
+
+
+/* Buttons */
+input[type=submit], button {
+	background: #37c978;
+	color: #fff;
+	border-bottom: solid 3px #29b863;
+	border-radius: 5px;	
+}
+
+input[type=submit]:hover, button:hover {
+	background-color: #29b863;
+	border-bottom: 2px solid #37c978;
+}
+
+
+/* Layout Classes */
+input.txt-one-quarter, select.dd-one-quarter, label.lbl-one-quarter {
+	width: 22%;
+	float: left;
+}
+
+input.txt-half, select.dd-half, label.lbl-half {
+	width: 47%;
+	float: left;
+}
+		
+input.txt-one-third, select.dd-one-third, label.lbl-one-third {
+	width: 30.3%;
+	float: left;
+}
+
+input.txt-two-thirds, select.dd-two-thirds, label.lbl-two-thirds {
+	width: 63.6%;
+	float: left;
+}
+/* End Layout Classes */
+
+
+/* icons */
+input.username {background-position: right -40px;}
+input.password {background-position: right -80px;}
+input.from {background-position: right -120px;}
+input.to {background-position: right -165px;}
+input.date {background-position: right -205px;}
